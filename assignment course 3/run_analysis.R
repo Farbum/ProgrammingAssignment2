@@ -63,4 +63,5 @@ for (i in 1:length(all_data$activity)) {
 ##creating a matrix with the average of each variable for each subject and each activity
 s<-split(all_data,list(all_data$activity,all_data$num_subject))
 average_data<-sapply(s,function(x) colMeans(x[,4:69]))
+average_data
 
